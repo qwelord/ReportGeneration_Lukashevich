@@ -24,7 +24,8 @@
                 <StackPanel x:Name="Parent">
                 </StackPanel>
             </ScrollViewer>
-            <Button Click="ReportGeneration" Content="Отчёт" Height="25" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10"/>
+            <Button Click="ReportGeneration" Content="Отчёт" Height="25" Width="100" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10"/>
         </Grid>
     </Grid>
 </Page>

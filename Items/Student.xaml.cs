@@ -2,27 +2,14 @@
 using ReportGeneration_Lukashevich.Pages;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ReportGeneration_Lukashevich.Items
 {
-    /// <summary>
-    /// Логика взаимодействия для Student.xaml
-    /// </summary>
     public partial class Student : UserControl
     {
         private Main _main;
+
         public Student()
         {
             InitializeComponent();
@@ -33,7 +20,8 @@ namespace ReportGeneration_Lukashevich.Items
             InitializeComponent();
             _main = mainPage;
 
-            TBFio.Text = $"({student.Lastname}) {student.Firstname}";
+            // ФИО без скобок
+            TBFio.Text = $"{student.Lastname} {student.Firstname}";
             CBExplored.IsChecked = student.Expelled;
 
             List<DisciplineContext> StudentDisciplines = _main.AllDisciplines.FindAll(

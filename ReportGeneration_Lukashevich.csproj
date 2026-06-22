@@ -6,22 +6,12 @@
 		<Nullable>enable</Nullable>
 		<RootNamespace>ReportGeneration_Lukashevich</RootNamespace>
 		<AssemblyTitle>ReportGeneration_Lukashevich</AssemblyTitle>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 	</PropertyGroup>
-	<ItemGroup>
-	  <None Remove="Images\ic_student.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<Reference Include="PresentationFramework" />
-		<Reference Include="PresentationCore" />
-		<Reference Include="WindowsBase" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="MySql.Data" Version="8.0.33" />
-		<PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Resource Include="Images\ic_student.png" />
+		<PackageReference Include="EPPlus" Version="7.5.2" />
+		<PackageReference Include="System.Drawing.Common" Version="8.0.4" />
 	</ItemGroup>
 </Project>

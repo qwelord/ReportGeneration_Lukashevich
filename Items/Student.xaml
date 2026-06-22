@@ -3,9 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ReportGeneration_Lukashevich.Items"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="185" d:DesignWidth="300">
     <Grid Margin="5" Background="#FFFFFF">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -13,12 +12,12 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Image Width="80" Margin="10,10,10,0" Height="90" VerticalAlignment="Top"
-               Source="/Images/ic-student.png"/>
+               Source="/ReportGeneration_Lukashevich;component/Images/ic-student.png"/>
         <TextBox x:Name="TBFio" Text="Владелец Владыка" VerticalAlignment="Top" Height="25"
                  IsEnabled="False" Grid.Column="1" Margin="10,10,10,4" VerticalContentAlignment="Center"/>
         <TextBox x:Name="TBGroup" Text="" VerticalAlignment="Top" Height="25" IsEnabled="False"
                  Grid.Column="2" Margin="10,6,10,10" VerticalContentAlignment="Center"/>
-        <CheckBox x:Name="CBExplored" Content="Отклонец" VerticalAlignment="Top"
+        <CheckBox x:Name="CBExplored" Content="Отчислен" VerticalAlignment="Top"
                   Grid.Column="1" Margin="10,40,0,0" HorizontalAlignment="Left" Width="100" IsEnabled="False"/>
         <Label Content="Выполненные работы: " VerticalAlignment="Top" Grid.Column="1"
                Margin="10,60,10,0" Grid.ColumnSpan="2"/>

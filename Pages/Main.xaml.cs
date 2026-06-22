@@ -60,12 +60,22 @@ namespace ReportGeneration_Lukashevich.Pages
             CreateStudents(SearchStudent);
         }
 
+
+
         private void ReportGeneration(object sender, System.Windows.RoutedEventArgs e)
         {
+            System.Windows.MessageBox.Show("Кнопка нажата! Шаг 1");
+
             if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1)
             {
+                System.Windows.MessageBox.Show("Группа выбрана! Шаг 2");
                 int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem.ToString()).Id;
+                System.Windows.MessageBox.Show($"Id группы: {IdGroup}. Шаг 3");
                 Classes.Common.Report.Group(IdGroup, this);
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Группа не выбрана!");
             }
         }
     }
