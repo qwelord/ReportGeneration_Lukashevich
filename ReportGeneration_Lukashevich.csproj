@@ -8,12 +8,13 @@
 		<AssemblyTitle>ReportGeneration_Lukashevich</AssemblyTitle>
 	</PropertyGroup>
 	<ItemGroup>
+		<Reference Include="PresentationFramework" />
+		<Reference Include="PresentationCore" />
+		<Reference Include="WindowsBase" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="MySql.Data" Version="8.0.33" />
 		<PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Images\" />
-	  <Folder Include="Items\" />
-	  <Folder Include="Pages\" />
 	</ItemGroup>
 </Project>
