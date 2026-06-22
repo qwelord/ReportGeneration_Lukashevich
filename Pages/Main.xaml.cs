@@ -62,7 +62,11 @@ namespace ReportGeneration_Lukashevich.Pages
 
         private void ReportGeneration(object sender, System.Windows.RoutedEventArgs e)
         {
-            // Заглушка для генерации отчёта
+            if (CBGroups.SelectedIndex != CBGroups.Items.Count - 1)
+            {
+                int IdGroup = AllGroups.Find(x => x.Name == CBGroups.SelectedItem.ToString()).Id;
+                Classes.Common.Report.Group(IdGroup, this);
+            }
         }
     }
 }
