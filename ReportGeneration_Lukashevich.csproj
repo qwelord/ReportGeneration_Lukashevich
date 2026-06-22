@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+		<RootNamespace>ReportGeneration_Lukashevich</RootNamespace>
+		<AssemblyTitle>ReportGeneration_Lukashevich</AssemblyTitle>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MySql.Data" Version="8.0.33" />
+		<PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+	</ItemGroup>
+</Project>
